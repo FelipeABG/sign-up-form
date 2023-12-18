@@ -1,12 +1,11 @@
-:root{
-    box-sizing: border-box;
-}   
-
+/* Global definitions */  
 @font-face {
     font-family: "Norse Bold";
     src: url("fonts/Norse-Bold.otf");
 }
 
+
+/* Basic structure of the page */
 html, body{
     margin: 0;
     height: 100%;
@@ -27,9 +26,13 @@ html, body{
 .right-container{
     width: 70%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
+/* Left container */
 .logo-img{
     width: 100px;
     height: 100px;
@@ -46,3 +49,88 @@ html, body{
     font-family: "Norse Bold";
     font-size: 3rem;
 }
+
+/* Right container */
+.text-container{
+    padding-left: 40px;
+    margin-top: 100px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+.form-container{
+    height: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 4px 15px -2px rgba(0, 0, 0, 0.2); 
+    padding-left: 40px;
+}
+
+.form-container p{
+    font-size: 1.3rem;
+}
+
+.form{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 50px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container{
+    padding-left: 40px;
+}
+
+.button-container p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #343434;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding-right: 20px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #2f7ab3;
+    box-shadow: 0px 4px 15px -2px rgba(0, 0, 0, 0.2);
+}
+
+label{
+    font-size: 0.9rem;
+    color: #605f5f;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    box-shadow: 0px 4px 15px -2px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #4e5f3f;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
+}
+
+
