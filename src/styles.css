@@ -65,7 +65,7 @@ html, body{
 }
 
 .form-container{
-    height: 35%;
+    height: 32%;
     box-shadow: var(--shadow);
     padding-left: 40px;
 }
@@ -109,6 +109,15 @@ input:focus{
     outline: none;
     border: 1px solid #2f7ab3;
     box-shadow: var(--shadow);
+}
+
+.error{
+    border: 1px solid rgb(172, 9, 9);
+}
+
+.error-message{
+    color: rgb(172, 9, 9);
+    font-size: 0.1rem;
 }
 
 label{

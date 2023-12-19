@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sign up</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -26,10 +27,10 @@
 
         <div class="form-container">
             <p><strong>Let`s do this!</strong></p>
-            <form class="form">
+            <form class="form" id="form">
                 <div class="input-container">
                     <label for="first_name"><strong>FIRST NAME</strong></label>
-                    <input type="text" id="first_name">
+                    <input required type="text" id="first_name">
                 </div>
                 <div class="input-container">
                     <label for="last_name"><strong>LAST NAME</strong></label>
@@ -37,7 +38,7 @@
                 </div>
                 <div class="input-container">
                     <label for="email"><strong>EMAIL</strong></label>
-                    <input type="email" id="email">
+                    <input required type="email" id="email">
                 </div>
                 <div class="input-container">
                     <label for="phone_number"><strong>PHONE NUMBER</strong></label>
@@ -45,17 +46,17 @@
                 </div>
                 <div class="input-container">
                     <label for="password"><strong>PASSWORD</strong></label>
-                    <input type="password" id="password">
+                    <input required type="password" class="password" id="password">
                 </div>
                 <div class="input-container">
                     <label for="confirm_password"><strong>CONFIRM PASSWORD</strong></label>
-                    <input type="password" id="confirm_password">
+                    <input required type="password" class="confirm-password" id="confirm_password">
                 </div>
             </form>
         </div>
 
         <div class="button-container">
-            <button><strong>Create Account</strong></button>
+            <button onclick="verifyPassword()" form="form"><strong>Create Account</strong></button>
             <p><strong>Already have an account? <a href="#">Sign in</a></strong></p>
         </div>
     </div>
