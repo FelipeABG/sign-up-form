@@ -25,6 +25,6 @@ Made by Felipe Augusto
 
 ---
 
-#### [Live Server](https://felipeabg.github.io/sign-up-form)
+#### [Live Server](https://felipeabg.github.io/sign-up-form/)
 
  
