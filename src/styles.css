@@ -1,4 +1,10 @@
 /* Global definitions */  
+:root{
+    --shadow: 0px 4px 15px -2px rgba(0, 0, 0, 0.2);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 @font-face {
     font-family: "Norse Bold";
     src: url("fonts/Norse-Bold.otf");
@@ -55,14 +61,12 @@ html, body{
     padding-left: 40px;
     margin-top: 100px;
     width: 50%;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
 }
 
 .form-container{
     height: 35%;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0px 4px 15px -2px rgba(0, 0, 0, 0.2); 
+    box-shadow: var(--shadow);
     padding-left: 40px;
 }
 
@@ -72,10 +76,12 @@ html, body{
 
 .form{
     width: 55%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 15px 30px;
 }
 
 .input-container{
@@ -88,7 +94,6 @@ html, body{
 }
 
 .button-container p{
-    font-family: Arial, Helvetica, sans-serif;
     color: #343434;
 }
 
@@ -97,18 +102,17 @@ input{
     height: 30px;
     border: 1px solid #E5E7EB;
     border-radius: 6px;
-    font-size: 1rem;
-    padding-right: 20px;
+    font-size: 0.8rem;
 }
 
 input:focus{
     outline: none;
     border: 1px solid #2f7ab3;
-    box-shadow: 0px 4px 15px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
 }
 
 label{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #605f5f;
 }
 
@@ -117,10 +121,9 @@ button{
     border-radius: 5px;
     background-color: #596D48;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     padding: 10px;
-    box-shadow: 0px 4px 15px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
 }
 
 button:hover{
